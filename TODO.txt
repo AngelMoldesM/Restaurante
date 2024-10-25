@@ -4,8 +4,5 @@
 -Revisar etiquetas
 -Revisar Alt tags
 -Terminar conocenos
--Añadir validacion de campos
 -Reescalar video
 -Añadir efectos con JS
--Borde rojo o texto rojo validacion
-

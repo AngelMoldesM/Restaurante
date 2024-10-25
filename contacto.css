@@ -456,6 +456,15 @@ html{
     font-size: 20px;
   }
 
+
+/* Estilo para el mensaje de error en rojo */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
   /*Responsive*/
 
 *,
