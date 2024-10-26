@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Adlery Pro';
+  src: url('font/adlery_pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
@@ -56,8 +62,9 @@ html{
 #TituloMapa{
   color: #7D2E3E;
   justify-content: center;
-  font-size: 6vh;
+  font-size: 7vh;
   text-align: center;
+  font-family: 'Adlery Pro', sans-serif;
 }
 
 #mapa{
@@ -86,362 +93,189 @@ html{
     padding: 3vh;
 }
   
-  .contactanos .contenedor-responsive {
-    min-height: 75px;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 60px;
-    margin-left: auto;
-  }
+.contactanos .contenedor-responsive {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+}
+
+.contactanos input:focus {
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+}
+
+.contactanos textarea:focus {
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+}
+
+.contactanos .texto-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.contactanos .celda-responsive {
+  min-height: 75px;
+}
+
+.contactanos .contenedor-responsive.contenedor {
+  max-width: 1320px;
+  margin-top: 60px;
+  margin-right: 0;
+  margin-bottom: 60px;
+  margin-left: 0;
+}
+
+.contactanos .contenedor-responsive.contenedor-grande {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  border-color: #7D2E3E;
+  border-width: 4px;
+  border-style: solid;
+  margin-top: 5vh;
+  max-width: 1200px;
+}
+
+.contactanos .texto-blk.encabezado-contacto {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.contactanos .texto-blk.subencabezado-contacto {
+  max-width: 385px;
+  color: #939393;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.contactanos .svg-contacto {
+  padding-top: 0px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 65px;
+  height: 40px;
+}
+
+.contactanos .enlaces-redes-sociales {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contactanos .svg-social {
+  width: 35px;
+  height: 35px;
+}
+
+.contactanos .caja-texto {
+  display: flex;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.contactanos .texto-contacto {
+  color: #939393;
+}
+
+.contactanos .input {
+  height: 50px;
+  width: 90%;
+  border: 2.5px solid #556B2F;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+.contactanos .textinput {
+  height: 200px;
+  width: 95%;
+  border: 2px solid #556B2F;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 20px 30px 20px 20px;
+  max-height: 200px;
+  min-height: 100px;
+}
+
+.contactanos .boton-enviar {
+  min-width: 290px;
+  height: 60px;
+  background-color: #556B2F;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.contactanos .envoltura-boton {
+  display: flex;
+  justify-content: center;
+}
+
+.contactanos .texto-blk.titulo-input {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.contactanos .celda-responsive.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+  margin-bottom: 30px;
+}
+
+.contactanos .celda-responsive.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactanos .caja-texto-cabeza {
+  display: none;
+}
+
+.contactanos .linea {
+  border-right: 1.8px solid #a2a2a2;
+}
+
+.contactanos .celda-responsive.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.linea {
+  padding: 0 20px;
+}
+
   
-  .contactanos input:focus {
-    outline-color: initial;
-    outline-style: none;
-    outline-width: initial;
-  }
-  
-  .contactanos textarea:focus {
-    outline-color: initial;
-    outline-style: none;
-    outline-width: initial;
-  }
-  
-  .contactanos .text-blk {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    line-height: 25px;
-  }
-  
-  .contactanos .responsive-cell-block {
-    min-height: 75px;
-  }
-  
-  .contactanos .contenedor-responsive.container {
-    max-width: 1320px;
-    margin-top: 60px;
-    margin-right: 0;
-    margin-bottom: 60px;
-    margin-left: 0;
-  }
-  
-  .contactanos .contenedor-responsive.big-container {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: #f2f2f2;
-    border-radius: 12px;
-    border-color: #7D2E3E;
-    border-width: 4px;
-    border-style: solid;
-    margin-top: 5vh;
-    max-width: 1200px;
-  }
-  
-  .contactanos .text-blk.contactus-head {
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 700;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-  
-  .contactanos .text-blk.contactus-subhead {
-    max-width: 385px;
-    color: #939393;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 50px;
-    margin-left: 0px;
-  }
-  
-  .contactanos .contact-svg {
-    padding-top: 0px;
-    padding-right: 25px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    width: 65px;
-    height: 40px;
-  }
-  
-  .contactanos .social-media-links {
-    margin-top: 80px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    width: 250px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .contactanos .social-svg {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .contactanos .text-box {
-    display: flex;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 50px;
-    margin-left: 0px;
-  }
-  
-  .contactanos .contact-text {
-    color: #939393;
-  }
-  
-  .contactanos .input {
-    height: 50px;
-    width: 90%;
-    border-top-width: 2.5px;
-    border-right-width: 2.5px;
-    border-bottom-width: 2.5px;
-    border-left-width: 2.5px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-color: #556B2F;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 16px;
-    padding-top: 5px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-  }
-  
-  .contactanos .textinput {
-    height: 200px;
-    width: 95%;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-  border-color: #556B2F;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 16px;
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    max-height: 200px;
-    max-width: 95%;
-    min-height: 100px;
-    min-width: 95%;
-  }
-  
-  .contactanos .submit-btn {
-    min-width: 290px;
-    height: 60px;
-    background-color: #556B2F;
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-top-style: none;
-    border-right-style: none;
-    border-bottom-style: none;
-    border-left-style: none;
-    border-top-color: #767676;
-    border-right-color: #767676;
-    border-bottom-color: #767676;
-    border-left-color: #767676;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    cursor: pointer;
-  }
-  
-  .contactanos .btn-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contactanos .text-blk.input-title {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 15px;
-    margin-left: 0px;
-  }
-  
-  .contactanos .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-  }
-  
-  .contactanos .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contactanos .head-text-box {
-    display: none;
-  }
-  
-  .contactanos .line {
-    border-right-width: 1.8px;
-    border-right-style: solid;
-    border-right-color: #a2a2a2;
-  }
-  
-  .contactanos .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-  }
-  
-  @media (max-width: 1024px) {
-    .contactanos .contenedor-responsive.container {
-      justify-content: center;
-    }
-  
-    .contactanos .text-blk.contactus-subhead {
-      max-width: 90%;
-    }
-  
-    .contactanos .head-text-box {
-      display: block;
-    }
-  
-    .contactanos .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
-      padding-top: 0px;
-      padding-right: 20px;
-      padding-bottom: 60px;
-      padding-left: 0px;
-    }
-  
-    .contactanos .line {
-      border-right-width: initial;
-      border-right-style: none;
-      border-right-color: initial;
-      border-bottom-width: 1.8px;
-      border-bottom-style: solid;
-      border-bottom-color: #a2a2a2;
-    }
-  
-    .contactanos .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
-      margin-top: 60px;
-      margin-right: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-    }
-  
-    .contactanos .workik-contact-bigbox {
-      display: flex;
-    }
-  
-    .contactanos .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
-      padding-top: 0px;
-      padding-right: 0px;
-      padding-bottom: 0px;
-      padding-left: 0px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .contactanos .text-content {
-      display: none;
-    }
-  
-    .contactanos .input {
-      width: 100%;
-    }
-  
-    .contactanos .textinput {
-      width: 100%;
-    }
-  
-    .contactanos .text-blk.contactus-head {
-      font-size: 30px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .contactanos .contenedor-responsive.big-container {
-      padding-top: 0px;
-      padding-right: 20px;
-      padding-bottom: 0px;
-      padding-left: 20px;
-    }
-  
-    .contactanos .workik-contact-bigbox {
-      display: block;
-    }
-  
-    .contactanos .text-blk.input-title {
-      font-size: 16px;
-    }
-  
-    .contactanos .text-blk.contactus-head {
-      font-size: 26px;
-    }
-  
-    .contactanos .text-blk.contactus-subhead {
-      font-size: 16px;
-      line-height: 23px;
-    }
-  
-    .contactanos .input {
-      height: 45px;
-    }
-  
-    .contactanos .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
-      margin: 0 0 25px 0;
-    }
-  }
+ 
   #footer{
     background-color: #7D2E3E;
     color: white;
@@ -524,153 +358,3 @@ html{
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .wk-ipadp-1 {
-    width: 8.333333%;
-  }
-
-  .wk-ipadp-2 {
-    width: 16.666667%;
-  }
-
-  .wk-ipadp-3 {
-    width: 25%;
-  }
-
-  .wk-ipadp-4 {
-    width: 33.333333%;
-  }
-
-  .wk-ipadp-5 {
-    width: 41.666667%;
-  }
-
-  .wk-ipadp-6 {
-    width: 50%;
-  }
-
-  .wk-ipadp-7 {
-    width: 58.333333%;
-  }
-
-  .wk-ipadp-8 {
-    width: 66.666667%;
-  }
-
-  .wk-ipadp-9 {
-    width: 75%;
-  }
-
-  .wk-ipadp-10 {
-    width: 83.333333%;
-  }
-
-  .wk-ipadp-11 {
-    width: 91.666667%;
-  }
-
-  .wk-ipadp-12 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .wk-tab-1 {
-    width: 8.333333%;
-  }
-
-  .wk-tab-2 {
-    width: 16.666667%;
-  }
-
-  .wk-tab-3 {
-    width: 25%;
-  }
-
-  .wk-tab-4 {
-    width: 33.333333%;
-  }
-
-  .wk-tab-5 {
-    width: 41.666667%;
-  }
-
-  .wk-tab-6 {
-    width: 50%;
-  }
-
-  .wk-tab-7 {
-    width: 58.333333%;
-  }
-
-  .wk-tab-8 {
-    width: 66.666667%;
-  }
-
-  .wk-tab-9 {
-    width: 75%;
-  }
-
-  .wk-tab-10 {
-    width: 83.333333%;
-  }
-
-  .wk-tab-11 {
-    width: 91.666667%;
-  }
-
-  .wk-tab-12 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .wk-mobile-1 {
-    width: 8.333333%;
-  }
-
-  .wk-mobile-2 {
-    width: 16.666667%;
-  }
-
-  .wk-mobile-3 {
-    width: 25%;
-  }
-
-  .wk-mobile-4 {
-    width: 33.333333%;
-  }
-
-  .wk-mobile-5 {
-    width: 41.666667%;
-  }
-
-  .wk-mobile-6 {
-    width: 50%;
-  }
-
-  .wk-mobile-7 {
-    width: 58.333333%;
-  }
-
-  .wk-mobile-8 {
-    width: 66.666667%;
-  }
-
-  .wk-mobile-9 {
-    width: 75%;
-  }
-
-  .wk-mobile-10 {
-    width: 83.333333%;
-  }
-
-  .wk-mobile-11 {
-    width: 91.666667%;
-  }
-
-  .wk-mobile-12 {
-    width: 100%;
-  }
-}
-  

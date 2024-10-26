@@ -4,5 +4,4 @@
 -Revisar etiquetas
 -Revisar Alt tags
 -Terminar conocenos
--Reescalar video
 -Añadir efectos con JS
