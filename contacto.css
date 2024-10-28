@@ -11,11 +11,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-html{
-    background-color: #F4E3C0;
+html {
+  background-color: #F4E3C0;
 }
 
-#nombreContainer{
+#nombreContainer {
   display: flex;
   color: white;
   width: 100%;
@@ -34,6 +34,7 @@ html{
   transition: all 0.3s ease-out 0s;
   z-index: 9999;
 }
+
 .topnav:hover {
   opacity: 100%;
 }
@@ -56,10 +57,12 @@ html{
   background-color: #C7A252;
   color: white;
 }
-.topnav img{
+
+.topnav img {
   margin-right: 10px;
 }
-#TituloMapa{
+
+#TituloMapa {
   color: #7D2E3E;
   justify-content: center;
   font-size: 7vh;
@@ -67,32 +70,34 @@ html{
   font-family: 'Adlery Pro', sans-serif;
 }
 
-#mapa{
+#mapa {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2vh;
 }
-#mapaGoogle{
+
+#mapaGoogle {
   width: 80%;
   height: 50vh;
 }
-.contactanos * {
-    font-family: Nunito, sans-serif;
-  }
 
-  #fondo {
-    background-image: url(img/conocenos/img-cuanto-cuesta-montar-cocina-restaurante.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    padding: 3vh;
+.contactanos * {
+  font-family: 'Roboto', sans-serif;
 }
-  
+
+#fondo {
+  background-image: url(img/contacto/Fondo_ubicacion.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 3vh;
+}
+
 .contactanos .contenedor-responsive {
   min-height: 75px;
   height: fit-content;
@@ -203,7 +208,8 @@ html{
 }
 
 .contactanos .texto-contacto {
-  color: #939393;
+  color: #556B2F;
+  font-weight: bold;
 }
 
 .contactanos .input {
@@ -224,6 +230,8 @@ html{
   padding: 20px 30px 20px 20px;
   max-height: 200px;
   min-height: 100px;
+  max-width: 625px;
+  min-width: 400px;
 }
 
 .contactanos .boton-enviar {
@@ -274,21 +282,30 @@ html{
   padding: 0 20px;
 }
 
-  
- 
-  #footer{
-    background-color: #7D2E3E;
-    color: white;
-    width: 100%;
-    height: 5vh;
-    bottom: 0;
-    text-align: center;
-    opacity: 80%;
-    text-align: center;
-  }
-  #footer p{
-    font-size: 20px;
-  }
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: #7D2E3E;
+  color: white;
+  width: 100%;
+  height: 5vh;
+  bottom: 0;
+  text-align: center;
+  opacity: 80%;
+  text-align: center;
+}
+
+#footer p {
+  padding-top: 1vh;
+  margin: 0;
+  font-size: 20px;
+}
+
+#copyright {
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
 
 
 /* Estilo para el mensaje de error en rojo */
@@ -299,7 +316,7 @@ html{
 }
 
 
-  /*Responsive*/
+/*Responsive*/
 
 *,
 *:before,
@@ -357,4 +374,3 @@ html{
 .wk-desk-12 {
   width: 100%;
 }
-

@@ -2,52 +2,56 @@
   font-family: 'Adlery';
   src: url(font\Adlery-Pro-Blockletter-trial.ttf) format('truetype');
 }
-html{
-    background-color: #F4E3C0;
+
+html {
+  background-color: #F4E3C0;
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .topnav {
-    display: flex;
-    background-color: #7D2E3E;
-    overflow: hidden;
-    height: 5vh;
-    justify-content: center;
-    opacity: 80%;
-    position: relative;
-    transition: all 0.3s ease-out 0s;
-    z-index: 1;
-    margin: 2vh;
-  }
-  .topnav:hover {
-    opacity: 100%;
-  }
+  display: flex;
+  background-color: #7D2E3E;
+  overflow: hidden;
+  height: 5vh;
+  justify-content: center;
+  opacity: 80%;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+  z-index: 1;
+  margin: 2vh;
+}
 
-  .topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.topnav:hover {
+  opacity: 100%;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
 .topnav a:hover {
-    background-color: #C7A252;
-    color: black;
-  }
-  
+  background-color: #C7A252;
+  color: black;
+}
+
 .topnav a.active {
-    background-color: #C7A252;
-    color: white;
+  background-color: #C7A252;
+  color: white;
 }
 
 
-#logo{
-  position: fixed; /* Stay fixed */
+#logo {
+  position: fixed;
+  /* Stay fixed */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -58,10 +62,13 @@ body{
   background-color: white;
   opacity: 80%;
   border-radius: 12px 20px 12px 5px;
+  padding: 3vh;
   border: 2px solid #7D2E3E;
 }
 
-#footer{
+#footer {
+  display: flex;
+  justify-content: center;
   background-color: #7D2E3E;
   color: white;
   width: 100%;
@@ -71,6 +78,18 @@ body{
   text-align: center;
   opacity: 80%;
 }
+
+#footer p {
+  padding-top: 1vh;
+  margin: 0;
+  font-size: 20px;
+}
+
+#copyright {
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
 .video {
   position: fixed;
   right: 0;

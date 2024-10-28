@@ -52,7 +52,7 @@ function validateForm() {
     return isValid;
 }
 
-// Función para mostrar el mensaje de error y el borde rojo
+// Función para mostrar el mensaje de error
 function showError(inputElement, message) {
     inputElement.classList.add("error");
 

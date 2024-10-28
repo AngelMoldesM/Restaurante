@@ -1,7 +1,3 @@
 -Terminar doc
--Terminar footer
--Añadir footers restantes
--Revisar etiquetas
 -Revisar Alt tags
--Terminar conocenos
 -Añadir efectos con JS
