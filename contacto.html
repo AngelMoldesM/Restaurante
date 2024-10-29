@@ -10,17 +10,21 @@
 
 <body>
 
-  <head id="head">
+  <header id="head">
     <div id="nombreContainer">
       <img src="img/LogoRestaurante.png" alt="Logo" height="150" width="250">
     </div>
-    <div class="topnav">
+
+    <nav class="topnav">
       <a class="active" href="index.html">Inicio</a>
       <a href="menu.html">Carta</a>
       <a href="contacto.html">Contacto</a>
       <a href="conocenos.html">Sobre nosotros</a>
-    </div>
-  </head>
+    </nav>
+  </header>
+
+
+  <section id="ubicacion">
     <h2 id="TituloMapa">¿Dónde estamos?</h2>
     <div id="mapa">
       <iframe id="mapaGoogle"
@@ -28,128 +32,114 @@
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
- 
+  </section>
+
   <div id="fondo">
-    <div class="contactanos">
-      <div class="contenedor-responsive contenedor-grande">
-        <div class="contenedor-responsive contenedor">
-          <div class="celda-responsive wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 linea" id="contenedorFormulario">
-            <form class="formulario" onsubmit="return validateForm()">
-              <div class="bloque-contenedor envoltura-formulario">
-                <div class="caja-texto-cabeza">
-                  <p class="texto-blk encabezado-contacto">
-                    Contáctanos
+    <section id="contacto">
+      <div class="contactanos">
+        <div class="contenedor-responsive contenedor-grande">
+          <div class="contenedor-responsive contenedor">
+            <div class="celda-responsive wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 linea" id="contenedorFormulario">
+              <form class="formulario" onsubmit="return validateForm()">
+                <div class="bloque-contenedor envoltura-formulario">
+                  <div class="caja-texto-cabeza">
+                    <p class="texto-blk encabezado-contacto">Contáctanos</p>
+                  </div>
+                  <div class="contenedor-responsive">
+                    <div class="celda-responsive wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="contenedorInput">
+                      <label for="nombre" class="texto-blk titulo-input">Nombre</label>
+                      <input class="input" id="nombre" name="FirstName" placeholder="Paco">
+                    </div>
+                    <div class="celda-responsive wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                      <label for="apellidos" class="texto-blk titulo-input">Apellidos</label>
+                      <input class="input" id="apellidos" name="Last Name" placeholder="Pérez Castro">
+                    </div>
+                    <div class="celda-responsive wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                      <label for="email" class="texto-blk titulo-input">Email</label>
+                      <input class="input" id="email" name="Email" placeholder="email@email.com">
+                    </div>
+                    <div class="celda-responsive wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                      <label for="telefono" class="texto-blk titulo-input">Teléfono</label>
+                      <input class="input" id="telefono" name="PhoneNumber" placeholder="654 62 51 47">
+                    </div>
+                    <div class="celda-responsive wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
+                      <label for="comentario" class="texto-blk titulo-input">Comentario</label>
+                      <textarea class="textinput" id="comentario" placeholder="Escribe tu comentario"></textarea>
+                    </div>
+                  </div>
+                  <div class="envoltura-boton">
+                    <button class="boton-enviar">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <aside class="celda-responsive wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="contenedorInfo">
+              <div class="caja-contenedor">
+                <div class="contenido-texto">
+                  <p class="texto-blk encabezado-contacto" style="color: #556B2F;">Contáctanos</p>
+                  <p class="texto-blk subencabezado-contacto">
+                    Si tienes alguna duda o sugerencia, no dudes en contactar con nosotros
                   </p>
                 </div>
-                <div class="contenedor-responsive">
-                  <div class="celda-responsive wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="contenedorInput">
-                    <p class="texto-blk titulo-input">
-                      Nombre
-                    </p>
-                    <input class="input" id="nombre" name="FirstName" placeholder="Paco">
+                <div class="caja-contacto-grande">
+                  <div class="caja-contacto">
+                    <div class="telefono caja-texto">
+                      <img class="svg-contacto"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg"
+                        alt="Teléfono">
+                      <p class="texto-contacto">+34 123 456 789</p>
+                    </div>
+                    <div class="direccion caja-texto">
+                      <img class="svg-contacto"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg" alt="Correo">
+                      <p class="texto-contacto">elfogondelareina@gmail.es</p>
+                    </div>
+                    <div class="correo caja-texto">
+                      <img class="svg-contacto"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg"
+                        alt="Dirección">
+                      <p class="texto-contacto">Calle Claudio Moyano, 8</p>
+                    </div>
                   </div>
-                  <div class="celda-responsive wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <p class="texto-blk titulo-input">
-                      Apellidos
-                    </p>
-                    <input class="input" id="apellidos" name="Last Name" placeholder="Pérez Castro">
+                  <div class="enlaces-redes-sociales">
+                    <a href="">
+                      <img class="svg-social" id="is9ym"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                        alt="Google">
+                    </a>
+                    <a href="">
+                      <img class="svg-social" id="i706n"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                        alt="Twitter">
+                    </a>
+                    <a href="">
+                      <img class="svg-social" id="ib9ve"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
+                        alt="Instagram">
+                    </a>
+                    <a href="">
+                      <img class="svg-social" id="ie9fx"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
+                        alt="Facebook">
+                    </a>
                   </div>
-                  <div class="celda-responsive wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <p class="texto-blk titulo-input">
-                      Email
-                    </p>
-                    <input class="input" id="email" name="Email" placeholder="email@email.com">
-                  </div>
-                  <div class="celda-responsive wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <p class="texto-blk titulo-input">
-                      Teléfono
-                    </p>
-                    <input class="input" id="telefono" name="PhoneNumber" placeholder="654 62 51 47">
-                  </div>
-                  <div class="celda-responsive wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
-                    <p class="texto-blk titulo-input">
-                      Comentario
-                    </p>
-                    <textarea class="textinput" id="comentario" placeholder="Escribe tu comentario"></textarea>
-                  </div>
-                </div>
-                <div class="envoltura-boton">
-                  <button class="boton-enviar">
-                    Enviar
-                  </button>
                 </div>
               </div>
-            </form>
-          </div>
-          <div class="celda-responsive wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="contenedorInfo">
-            <div class="caja-contenedor">
-              <div class="contenido-texto">
-                <p class="texto-blk encabezado-contacto" style="color: #556B2F;">
-                  Contáctanos
-                </p>
-                <p class="texto-blk subencabezado-contacto">
-                  Si tienes alguna duda o sugerencia, no dudes en contactar con nosotros
-                </p>
-              </div>
-              <div class="caja-contacto-grande">
-                <div class="caja-contacto">
-                  <div class="telefono caja-texto">
-                    <img class="svg-contacto"
-                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg" alt="Teléfono">
-                    <p class="texto-contacto">
-                      +34 123 456 789
-                    </p>
-                  </div>
-                  <div class="direccion caja-texto">
-                    <img class="svg-contacto"
-                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg" alt="Correo">
-                    <p class="texto-contacto">
-                      elfogondelareina@gmail.es
-                    </p>
-                  </div>
-                  <div class="correo caja-texto">
-                    <img class="svg-contacto"
-                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg" alt="Dirección">
-                    <p class="texto-contacto">
-                      Calle Claudio Moyano, 8
-                    </p>
-                  </div>
-                </div>
-                <div class="enlaces-redes-sociales">
-                  <a href="">
-                    <img class="svg-social" id="is9ym"
-                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
-                      alt="Google">
-                  </a>
-                  <a href="">
-                    <img class="svg-social" id="i706n"
-                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
-                      alt="Twitter">
-                  </a>
-                  <a href="">
-                    <img class="svg-social" id="ib9ve"
-                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
-                      alt="Instagram">
-                  </a>
-                  <a href="">
-                    <img class="svg-social" id="ie9fx"
-                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
-                      alt="Facebook">
-                  </a>
-                </div>
-              </div>
-            </div>
+            </aside>
           </div>
         </div>
       </div>
-      
-    </div>
+    </section>
   </div>
+
+
   <footer id="footer">
     <p id="nombre">Ángel Moldes Mouriño 2024</p>
     <img id="copyright" src="img/Copyright.png" alt="Copyright" height="22" width="22">
   </footer>
   <script src="script.js"></script>
 </body>
+
 
 </html>
