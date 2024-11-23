@@ -73,3 +73,19 @@ function clearErrors() {
     const errorInputs = document.querySelectorAll(".error");
     errorInputs.forEach(input => input.classList.remove("error"));
 }
+
+// Selecciona todos los enlaces de la barra de navegación
+const navLinks = document.querySelectorAll('.topnav a');
+
+// Obtén la URL actual del navegador
+const currentURL = window.location.href;
+
+// Recorre todos los enlaces y compara su "href" con la URL actual
+navLinks.forEach(link => {
+  // Si el "href" del enlace está incluido en la URL actual, marca como activo
+  if (currentURL.includes(link.getAttribute('href'))) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
+});

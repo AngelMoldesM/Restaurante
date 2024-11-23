@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'Adlery';
+  font-family: 'Adlery Pro';
   src: url('font/adlery_pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -10,7 +12,7 @@
 
 body {
   margin: 0;
-  background-image: url(img/menu/interior.jpg);
+  background-image: url(img/menu/background.jpg);
 }
 
 .topnav {
@@ -58,7 +60,7 @@ body {
   height: 15vh;
   justify-content: center;
   background-color: #F4E3C0;
-  opacity: 90%;
+  opacity: 80%;
 }
 
 
@@ -93,6 +95,7 @@ body {
   margin-top: 2vh;
   margin-bottom: 2vh;
   border-radius: 12px;
+  opacity: 80%;
 }
 
 .menu {
@@ -102,10 +105,13 @@ body {
 
 .menu-group-heading {
   margin: 0;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   border-bottom: 2px solid #556B2F;
   color: #556B2F;
-  font-size: 30px;
+  font-size: 6vh;
+  font-family: 'Adlery Pro', sans-serif;
+  text-align: center;
+
 }
 
 .menu-group {
@@ -142,14 +148,20 @@ body {
 .menu-item-nombre {
   margin-right: 1.5em;
   color: #7D2E3E;
+  font-size: 1.3em;
+  font-family: 'PT Serif', serif;
 }
 
 .menu-item-precio {
   color: #7D2E3E;
+  font-size: 1.3em;
+  font-family: 'PT Serif', serif;
 }
 
 .menu-item-desc {
   line-height: 1.6;
+  font-family: 'PT Serif', serif;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
@@ -162,7 +174,7 @@ body {
   }
 
   .menu-item-img {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
   }
 }
